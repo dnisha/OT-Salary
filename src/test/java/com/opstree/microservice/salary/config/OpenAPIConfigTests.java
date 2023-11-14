@@ -1,4 +1,4 @@
-package com.opstree.microservice.salary.swagger;
+package com.opstree.microservice.salary.config;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -12,13 +12,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
 @SpringBootTest
-@ContextConfiguration(classes = OpenAPIConfig.class)
+@ContextConfiguration(classes = com.opstree.microservice.salary.swagger.OpenAPIConfig.class)
 class OpenAPIConfigTest {
 
     @Test
     void testOpenAPIConfiguration() {
         // Load the Spring context and retrieve the OpenAPI bean
-        OpenAPI openAPI = new OpenAPIConfig().myOpenAPI();
+        OpenAPI openAPI = new com.opstree.microservice.salary.swagger.OpenAPIConfig().myOpenAPI();
 
         // Verify that the OpenAPI object is not null
         assertNotNull(openAPI);
