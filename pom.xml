@@ -96,9 +96,6 @@
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
 				<version>8.4.2</version>
-				<configuration>
-					<suppressionFile>owasp-suppressions.xml</suppressionFile>
-				</configuration>
 				<executions>
 					<execution>
 						<goals>
