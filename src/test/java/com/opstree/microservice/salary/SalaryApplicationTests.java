@@ -11,4 +11,10 @@ class SalaryApplicationTests {
 		assertEquals(name, "Deepak");
 	}
 
+	@Test
+	void api() {
+		final String name = "Deepak";
+		assertEquals(name, "Deepak");
+	}
+
 }
